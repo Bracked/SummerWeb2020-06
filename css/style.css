@@ -1,0 +1,808 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.shadow {
+  -webkit-box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 13px rgba(0, 0, 0, 0.15);
+}
+
+.logo_1 {
+  width: 87px;
+  height: 36px;
+}
+
+.header {
+  padding: 0 0 86px;
+}
+
+.header__image {
+  max-width: 382px;
+  margin: 0 auto;
+  padding-top: 250px;
+  margin-bottom: 119px;
+}
+
+@media (max-width: 1140px) {
+  .header__image {
+    display: none;
+  }
+}
+
+.header__bottom {
+  background-color: #f8f8f8;
+}
+
+.header__row {
+  -webkit-box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+          box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+  background-color: #f8f8f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 43px 92px;
+}
+
+@media (max-width: 1140px) {
+  .header__row {
+    padding: 43px 25px;
+  }
+}
+
+@media (max-width: 940px) {
+  .header__row {
+    padding: 43px 15px;
+  }
+}
+
+@media (max-width: 890px) {
+  .header__menu {
+    display: none;
+  }
+}
+
+.header__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__links li {
+  margin-left: 22px;
+}
+
+@media (max-width: 940px) {
+  .header__links li {
+    margin-left: 15px;
+  }
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.header__link a {
+  color: #000;
+}
+
+.header__search {
+  padding: 9px 45px;
+  display: block;
+  border: 1px solid black;
+  position: relative;
+}
+
+.header__search :before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url(../img/icon/search.svg) center/cover no-repeat;
+}
+
+.header__search span {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.recipe {
+  background: url(../img/recipe_slider/1.jpg) center/cover no-repeat;
+  margin-bottom: 85px;
+}
+
+.recipe__body {
+  -webkit-box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+          box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+}
+
+.recipe__column {
+  margin: 0 0 0 91px;
+  padding: 49px 0 23px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.recipe__logo {
+  margin-bottom: 35px;
+}
+
+.recipe__logo img {
+  width: 252px;
+  height: 105px;
+}
+
+.recipe__header {
+  color: #921026;
+  font-family: "Playfair Display";
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  margin-bottom: 28px;
+}
+
+.recipe__text {
+  color: #000000;
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  width: 312px;
+  margin-bottom: 36px;
+}
+
+.recipe__more {
+  display: inline;
+}
+
+.recipe__link {
+  padding: 9px 13px;
+  border: 1px solid #c2c2c2;
+  height: 28px;
+  color: #000;
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.recipe__dots {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  margin-right: 15px;
+}
+
+.recipe__dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.dish__body {
+  -webkit-box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+          box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+  padding: 40px 43px 39px 53px;
+  background: #fff;
+  margin-bottom: 87px;
+}
+
+.dish__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dish__item {
+  padding-bottom: 33px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33333%;
+          flex: 1 1 33333%;
+}
+
+.dish__header {
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.45px;
+  margin-top: 15px;
+}
+
+.dish__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 11px;
+}
+
+.dish__info span {
+  color: #555555;
+}
+
+.dish__clock {
+  position: relative;
+  padding: 0 5px 0 15px;
+}
+
+.dish__clock :after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 14px;
+  background: url(../img/icon/line.svg) center/cover no-repeat;
+  display: block;
+}
+
+.dish__commemnt {
+  position: relative;
+  padding: 0 7px 0 20px;
+}
+
+.dish__view {
+  position: relative;
+  padding: 0 15px 0 20px;
+}
+
+.dish__view :before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/icon/eye.svg) center/cover no-repeat;
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-left: 4px;
+}
+
+.clock :before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/icon/clock.svg) center/cover no-repeat;
+  width: 11px;
+  height: 12px;
+  display: block;
+}
+
+.commemnt :before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/icon/comment.svg) center/cover no-repeat;
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-left: 4px;
+}
+
+.view :before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/icon/eye.svg) center/cover no-repeat;
+  width: 12px;
+  height: 12px;
+  display: block;
+  margin-left: 4px;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 140px;
+  -webkit-box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+          box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+}
+
+.info__content {
+  padding: 29px 40px 37px 36px;
+  background-color: #fff;
+  height: 438px;
+}
+
+.info__header {
+  color: #055555;
+  font-family: "Playfair Display - Black";
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 0.8px;
+  margin-bottom: 28px;
+}
+
+.info__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.info__time {
+  position: relative;
+}
+
+.info__time :before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../img/icon/clock.svg) center/cover no-repeat;
+  width: 11px;
+  height: 12px;
+}
+
+.info__dif {
+  position: relative;
+  padding: 0 5px 0 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.info__dif :before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -20px;
+  background: url(../img/icon/dif.svg) center/cover no-repeat;
+  width: 11px;
+  height: 12px;
+}
+
+.info__button {
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  display: block;
+  border: 1px solid #c2c2c2;
+  padding: 11px 16px 9px 16px;
+  margin-left: 15px;
+}
+
+.info__text p {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  margin-bottom: 25px;
+}
+
+.info__text h3 {
+  margin-bottom: 25px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+}
+
+.author {
+  margin-bottom: 78px;
+}
+
+.author__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.author__item {
+  width: 500px;
+  -webkit-box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+          box-shadow: 0 0 13px rgba(11, 12, 12, 0.15);
+  padding: 20px 47px 20px 32px;
+}
+
+.author__category {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #dddddd;
+  margin-bottom: 24px;
+}
+
+.author__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.author__image img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+}
+
+.author__object {
+  margin-left: 20px;
+}
+
+.author__name {
+  font-family: "Josefin Sans";
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-top: 14px;
+}
+
+.author__origin {
+  font-family: "Josefin Sans";
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  margin-top: 6px;
+}
+
+.author__icons {
+  margin-top: 25px;
+  border-bottom: 2px solid #ddd;
+}
+
+.author__header {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-top: 25px;
+}
+
+.author__text {
+  font-family: "Josefin Sans - Light Italic";
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  margin-top: 35px;
+}
+
+.author__signarure {
+  margin-top: 22px;
+  text-align: right;
+}
+
+.content__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content__item {
+  width: 289px;
+}
+
+.content__image {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+
+.food__header {
+  width: 252px;
+  color: #055555;
+  font-family: "Playfair Display - Black";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.55px;
+  padding: 27px 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+.food__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  padding: 0px 10px 0 23px;
+}
+
+.food__image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30px;
+          flex: 1 0 30px;
+  width: 57px;
+  height: 56px;
+}
+
+.food__body {
+  margin-left: 20px;
+}
+
+.food__name {
+  font-size: 14px;
+  font-family: "Josefin Sans";
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.food__name span {
+  font-family: "Josefin Sans Light";
+  font-weight: 300;
+  letter-spacing: 0.4px;
+  color: #d4d4d4;
+  display: block;
+  margin-bottom: 7px;
+}
+
+.food__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.food__clock {
+  position: relative;
+  padding-left: 15px;
+}
+
+.food__commemnt {
+  position: relative;
+  padding-left: 20px;
+}
+
+.food__view {
+  position: relative;
+  padding-left: 20px;
+}
+
+.percent {
+  background-color: #ffffff;
+  padding: 0px 21px 53px 17px;
+  margin-top: 48px;
+}
+
+.percent__header {
+  padding-top: 36px;
+}
+
+.percent__subheader {
+  color: #055555;
+  font-family: "Playfair Display - Black";
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  margin-top: 19px;
+}
+
+.percent__items {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 290px;
+}
+
+.percent__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 15px;
+}
+
+.percent__box {
+  margin-right: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.percent__circle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.percent__circle svg {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.percent__circle circle {
+  width: 60px;
+  height: 60px;
+  fill: none;
+  stroke-width: 2px;
+  stroke: #000;
+  -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  stroke-linecap: round;
+}
+
+.percent__circle :nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #f3f3f3;
+}
+
+.percent__circle :nth-child(2) {
+  stroke-dashoffset: 100;
+  stroke: #03a9f4;
+}
+
+.percent__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #999;
+}
+
+.percent__number h2 {
+  color: #959595;
+  font-family: "Josefin Sans";
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+}
+
+.percent__content {
+  width: 120px;
+}
+
+.percent__label {
+  color: #555555;
+  font-family: "Josefin Sans";
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.45px;
+}
+
+.percent__sublabel {
+  color: #555;
+  font-family: "Josefin Sans - Light Italic";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.35px;
+}
+
+.label {
+  font-family: "Josefin Sans";
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}

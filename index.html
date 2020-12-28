@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" type="image/y-icon"
+    href=data:image/jpeg;base64,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>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header class="header">
+        <div class="header__image">
+          <img src="img/logo.png" alt="">
+        </div>
+        <div class="header__bottom">
+          <div class="header__row">
+            <div class="header__item">
+              <img src="img/logo.png" alt="" class=" logo_1">
+            </div>
+            <div class="header__item">
+              <nav class="header__menu">
+                <ul class="header__links">
+                  <li class="header__link">
+                    <a href="" class="">HOME</a>
+                    <!-- <ul class="header__sub-menu">
+                      <li><a href="" class="header__sub-link">RECOMMENDED</a></li>
+                      <li><a href="" class="header__sub-link">POPULAR</a></li>
+                      <li><a href="" class="header__sub-link">QUICK & EASY</a></li> 
+                      <li><a href="" class="header__sub-link">HEALTHY</a></li>
+                      <li><a href="" class="header__sub-link">NEWEST</a></li>
+                    </ul>  доробити випадаюче меню та бургер-->
+                  </li>
+                  <li class="header__link"> <a href="" class="">Recipes</a></li>
+                  <li class="header__link"> <a href="" class=""> Photo Gallerie</a> </li>
+                  <li class="header__link"> <a href="" class=""> Videos </a></li>
+                  <li class="header__link"> <a href="" class=""> all Categories </a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__item">
+              <a href="" class="header__search"><span>Find a recipe</span></a>
+            </div>
+
+
+          </div>
+        </div>
+      </header>
+      <div class="recipe">
+        <div class="recipe__body">
+          <div class="recipe__column">
+            <div class="recipe__logo ">
+              <img src="img/logo.png" alt="">
+            </div>
+            <div class="recipe__header">Bananas Foster Ice Cream Cake</div>
+            <div class="recipe__text">If you're looking for decadence, look no further — you've found the Holy Grail of
+              desserts. Honestly, this cake makes us wonder why Bananas Foster hasn't always been served on top of ice
+              cream cake.</div>
+            <div class="recipe__more ">
+              <a href="" class="recipe__link"><span>GET IT RECIPE</span></a>
+            </div>
+            <div class="recipe__dots">
+              <span class="recipe-dot"></span>
+              <span class="recipe-dot"></span>
+              <span class="recipe-dot"></span>
+              <span class="recipe-dot"></span>
+              <span class="recipe-dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dish">
+        <div class="dish__body">
+          <div class="dish__items">
+            <div class="dish__item">
+              <div class="dish__image">
+                <img src="img/dish/1.jpg" alt="">
+              </div>
+              <div class="dish__header">Raspberry & Cream Frozen Yogurt Pie</div>
+              <div class="dish__info">
+                <div class="dish__clock clock">
+                  <span>35mins</span>
+                </div>
+                <div class="dish__commemnt commemnt">
+                  <span>7</span>
+                </div>
+                <div class="dish__view view">
+                  <span>14</span>
+                </div>
+              </div>
+            </div>
+            <div class="dish__item">
+              <div class="dish__image">
+                <img src="img/dish/2.jpg" alt="">
+              </div>
+              <div class="dish__header">Raspberry & Cream Frozen Yogurt Pie</div>
+              <div class="dish__info">
+                <div class="dish__clock">
+                  <span>35mins</span>
+                </div>
+                <div class="dish__commemnt">
+                  <span>7</span>
+                </div>
+                <div class="dish__view">
+                  <span>14</span>
+                </div>
+              </div>
+            </div>
+            <div class="dish__item">
+              <div class="dish__image">
+                <img src="img/dish/3.jpg" alt="">
+              </div>
+              <div class="dish__header">Raspberry & Cream Frozen Yogurt Pie</div>
+              <div class="dish__info">
+                <div class="dish__clock">
+                  <span>35mins</span>
+                </div>
+                <div class="dish__commemnt">
+                  <span>7</span>
+                </div>
+                <div class="dish__view">
+                  <span>14</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__image">
+          <img src="img/dish/4.jpg" alt="">
+        </div>
+        <div class="info__content">
+          <div class="info__header">
+            Bananas Foster Ice Cream Cake
+          </div>
+          <div class="info__body">
+            <div class="info__time">15mins</div>
+            <div class="info__dif">Easy</div>
+            <div class="info__button"> SAVE RECIPE</div>
+          </div>
+          <div class="info__text">
+            <p> 1 (8 ounce) container frozen whipped topping, thawed
+              20 chocolate round wafers, divided
+              1 (7 1/4 ounce) bottle Smucker's® Hot Dark Chocolate Microwaveable Topping, divided
+            </p>
+            <h3>Directions</h3>
+            <p>ARRANGE 8 to 9 ice cream sandwiches in 9-inch square pan, cutting to form an even layer. Spread with half
+              of whipped topping. Break or crush chocolate wafers and sprinkle over the whipped cream. Microwave 1 cup
+              of chocolate topping into small microwave-safe bowl on HIGH for 30 seconds. Drizzle evenly over wafers.
+              TOP with remaining 8 to 9 ice cream sandwiches to form an even layer. Spread with remaining whipped
+              topping. Freeze 3 hours or overnight. Remove from freezer 10 minutes before serving. Cut into squares.
+              HEAT remaining topping. Drizzle each serving with topping. Sprinkle with decorator sprinkles.
+              Nutritional information (amount per servings): Total Calories: 640. Sodium 440mg. Fat: 32g. Carbohydrates:
+              82g. Cholesterol: 40mg. Protein: 11g. Fiber: 1g.վ</p>
+          </div>
+        </div>
+      </div>
+      <div class="author">
+        <div class="author__body">
+          <div class="author__items">
+            <div class="author__item">
+              <div class="author__category">Author</div>
+              <div class="author__content">
+                <div class="author__image">
+                  <img src="img/autor/w-13.jpg.png" alt="">
+                </div>
+                <div class="author__object">
+                  <div class="author__name">Karen Gray</div>
+                  <div class="author__origin">United States </div>
+                  <div class="author__icons"></div>
+                  <div class="author__header">
+                    About Lemon
+                  </div>
+                  <div class="author__text">
+                    Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is
+                    what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000
+                    recipes to show for it, more than anywhere else in the digital universe. We also have tons
+                    crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a
+                    heck of a lot of Food. Thank you!
+
+                  </div>
+                  <div class="author__signarure">
+                    <img src="img/autor/signature.png" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="author__item">
+              <div class="author__category">Author</div>
+              <div class="author__content">
+                <div class="author__image">
+                  <img src="img/autor/w-13.jpg.png" alt="">
+                </div>
+                <div class="author__object">
+                  <div class="author__name">Karen Gray</div>
+                  <div class="author__origin">United States </div>
+                  <div class="author__icons"></div>
+                  <div class="author__header">
+                    About Lemon
+                  </div>
+                  <div class="author__text">
+                    Over the fifteen-year life span of Food.com, we’ve learned that – in addition to eating – sharing is
+                    what you do best. And thanks to the 20 million of you who come here each month, we now have 500,000
+                    recipes to show for it, more than anywhere else in the digital universe. We also have tons
+                    crazy-tempting photos, troves of recipe reviews and more than 2 million Facebook likes. That’s a
+                    heck of a lot of Food. Thank you!
+
+                  </div>
+                  <div class="author__signarure">
+                    <img src="img/autor/signature.png" alt="">
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="content">
+        <div class="content__items">
+          <div class="content__item">
+            <div class="content__food food shadow">
+              <div class="food__header">Chi-Chi or Chichi</div>
+              <div class="food__author">
+                <div class="food__image">
+                  <img src="img/content/recipe/girl.png" alt="">
+                </div>
+                <div class="food__body">
+                  <div class="food__name">
+                    <span>Recipe by</span>
+                    Smuckersreg Toppings
+                  </div>
+                  <div class="food__info">
+                    <div class="food__clock clock">
+                      <span>35mins</span>
+                    </div>
+                    <div class="food__commemnt commemnt">
+                      <span>15</span>
+                    </div>
+                    <div class="food__view view">
+                      <span>27</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content__image">
+                <img src="img/content/recipe/food.jpg" alt="">
+              </div>
+            </div>
+            <div class="percent shadow">
+              <div class="percent__header label">Target</div>
+              <div class="percent__subheader">Presentation line</div>
+              <div class="percent__items">
+                <div class="percent__item">
+
+                  <div class="percent__box">
+                    <div class="percent__circle">
+
+                      <svg width="60" height="60">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="percent__number">
+                        <h2>19<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="percent__content">
+                    <div class="percent__label">Housewives</div>
+                    <div class="percent__sublabel">Lorem ipsum dolor sit amet, prima ceteros.</div>
+                  </div>
+                </div>
+                <div class="percent__item">
+
+                  <div class="percent__box">
+                    <div class="percent__circle green">
+
+                      <svg width="60" height="60">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="percent__number">
+                        <h2>65<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="percent__content">
+                    <div class="percent__label">Housewives</div>
+                    <div class="percent__sublabel">Lorem ipsum dolor sit amet, prima ceteros.</div>
+                  </div>
+                </div>
+                <div class="percent__item">
+
+                  <div class="percent__box">
+                    <div class="percent__circle">
+
+                      <svg width="60" height="60">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="percent__number">
+                        <h2>50<span>%</span></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="percent__content">
+                    <div class="percent__label">Housewives</div>
+                    <div class="percent__sublabel">Lorem ipsum dolor sit amet, prima ceteros.</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="content__item">
+            .content__
+          </div>
+          <div class="content__item">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+</body>
+
+
+</html>
